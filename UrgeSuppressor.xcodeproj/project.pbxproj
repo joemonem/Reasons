@@ -11,6 +11,11 @@
 		45861B022AD0279A00C1C67C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45861B012AD0279A00C1C67C /* ContentView.swift */; };
 		45861B042AD0279B00C1C67C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45861B032AD0279B00C1C67C /* Assets.xcassets */; };
 		45861B072AD0279B00C1C67C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45861B062AD0279B00C1C67C /* Preview Assets.xcassets */; };
+		45861B102AD027E900C1C67C /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45861B0F2AD027E900C1C67C /* InputView.swift */; };
+		45861B122AD0294900C1C67C /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45861B112AD0294900C1C67C /* Database.swift */; };
+		45EB072C2AD69E9400966B8A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EB072B2AD69E9400966B8A /* ErrorView.swift */; };
+		45EB072E2AD69EAE00966B8A /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EB072D2AD69EAE00966B8A /* ErrorWrapper.swift */; };
+		45EB07302AD69EDE00966B8A /* WhyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EB072F2AD69EDE00966B8A /* WhyStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		45861B012AD0279A00C1C67C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45861B032AD0279B00C1C67C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45861B062AD0279B00C1C67C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45861B0F2AD027E900C1C67C /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		45861B112AD0294900C1C67C /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		45EB072B2AD69E9400966B8A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		45EB072D2AD69EAE00966B8A /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		45EB072F2AD69EDE00966B8A /* WhyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,9 @@
 		45861AFE2AD0279A00C1C67C /* UrgeSuppressor */ = {
 			isa = PBXGroup;
 			children = (
+				45861B0E2AD027C300C1C67C /* Views */,
+				45861B0D2AD027BD00C1C67C /* Models */,
 				45861AFF2AD0279A00C1C67C /* UrgeSuppressorApp.swift */,
-				45861B012AD0279A00C1C67C /* ContentView.swift */,
 				45861B032AD0279B00C1C67C /* Assets.xcassets */,
 				45861B052AD0279B00C1C67C /* Preview Content */,
 			);
@@ -65,6 +76,26 @@
 				45861B062AD0279B00C1C67C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45861B0D2AD027BD00C1C67C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45861B112AD0294900C1C67C /* Database.swift */,
+				45EB072D2AD69EAE00966B8A /* ErrorWrapper.swift */,
+				45EB072F2AD69EDE00966B8A /* WhyStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		45861B0E2AD027C300C1C67C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45861B012AD0279A00C1C67C /* ContentView.swift */,
+				45861B0F2AD027E900C1C67C /* InputView.swift */,
+				45EB072B2AD69E9400966B8A /* ErrorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EB072E2AD69EAE00966B8A /* ErrorWrapper.swift in Sources */,
+				45EB07302AD69EDE00966B8A /* WhyStore.swift in Sources */,
+				45EB072C2AD69E9400966B8A /* ErrorView.swift in Sources */,
+				45861B102AD027E900C1C67C /* InputView.swift in Sources */,
 				45861B022AD0279A00C1C67C /* ContentView.swift in Sources */,
+				45861B122AD0294900C1C67C /* Database.swift in Sources */,
 				45861B002AD0279A00C1C67C /* UrgeSuppressorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
