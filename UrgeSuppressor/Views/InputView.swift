@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InputView: View {
     @Binding var whys: [String]
-    @Binding var why: String
+    @State var why: String
     
     var body: some View {
         VStack {
@@ -17,12 +17,6 @@ struct InputView: View {
                 
             Text("Add your why below").fontWeight(.thin)
             Form {
-                ForEach(whys, id: \.self) { why in
-                    Text(why)
-                }
-                .onDelete { indices in
-                    whys.remove(atOffsets: indices)
-                }
                 HStack {
                     TextField("Why", text: $why )
                     Button(action: {
@@ -33,9 +27,17 @@ struct InputView: View {
                         Image(systemName: "plus.circle.fill")
                         }.disabled(why.isEmpty)
                 }
+                ForEach(whys, id: \.self) { why in
+                    Text(why)
+                }
+                .onDelete { indices in
+                    whys.remove(atOffsets: indices)
+                }
+  
             }
             .cornerRadius(16)
-            
+            .padding()
+            Text("Swipe this page down when you're done")
 
             Spacer()
         }
@@ -45,6 +47,6 @@ struct InputView: View {
 
 struct InputView_Preview: PreviewProvider {
     static var previews: some View {
-        InputView(whys: .constant(["Just because", "Philosophy"]), why: .constant(""))
+        InputView(whys: .constant(["Just because", "Philosophy"]), why: "")
     }
 }

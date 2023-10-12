@@ -31,7 +31,7 @@ struct ContentView: View {
                 isPresentingInput = true
             }
             .sheet(isPresented: $isPresentingInput) {
-                InputView(whys: $whys, why: $reason)
+                InputView(whys: $whys, why: "")
             }
             .onChange(of: scenePhase) { phase in
                 if phase == .inactive { saveAction() }
